@@ -1,0 +1,281 @@
+
+html{
+    font-family: Verdana, sans-serif;
+}
+#head{
+    text-decoration-color: black;
+    height: 10%;
+    width: 100%;
+    margin: -8px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    /* background-color: #BEAEE2; */
+}
+#name{
+    text-decoration-color: black;
+    font-weight: 550;
+}
+#name:hover{
+    /* box-shadow: 0px 6px 8px whitesmoke;
+    border-radius: 50%; */
+    border-bottom:2px solid whitesmoke;
+    cursor::cell;
+    transform: scale(1.03);
+    transition-duration: .5s;
+}
+.head_f{
+    font-size: 1.3rem;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+#back{
+    padding:3px;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    padding-right: 5%;
+}
+#back a{
+    /* margin-left: 8px; */
+    font-weight: 550;
+    color: black;
+    margin-left: 7%;
+    text-decoration: none;
+    
+}
+#back a:hover{
+    color: rgb(156, 138, 138);
+    transition-duration: .3s;
+}
+#image_{
+    background-image: url("../Html_/imgs/kali02.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 65vh;
+    /* margin-top: -3%; */
+    margin-left: -.49%;
+}
+#profile{
+    position: relative;
+    left: 40%;
+    border: 2pt solid black;
+    border-radius: 50%;
+    margin-top: -8rem;
+}
+#about{
+    margin-top: 6rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+}
+#cont{
+    /* background-color: #A2D2FF; */
+    /* background-image: linear-gradient( 100deg,#A2D2FF, whitesmoke); */
+    color: white;
+    background-color: black;
+    font-family: sans-serif;
+}
+
+#border{
+    position: relative;
+    left: 2%;
+    width: 0px;
+    height: inherit;
+    border: 2px soli/d black;
+}
+#abt{
+    width: 40%;
+    padding: 15px;
+    text-align: center;
+    font-size: 10rem;
+}
+#about section{
+    margin: 5rem;
+    padding: 25px;
+    margin-top: 3rem;
+    text-align: justify;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    border-radius: 7px;
+}
+h1{
+    font-size: 4rem;
+    font-family: Helvetica , Garamond;
+    text-align: center;
+    margin-top: 5rem; margin-bottom: 5rem;
+}
+/* Skills */
+#skills{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#skills div{
+    margin: 3%;
+    margin-right: auto;
+    width: 20%;
+    /* min-width: 200px; */
+    display: flex;
+    flex-direction: column;
+}
+#skills div div{
+    width: 80%;
+    padding: .6rem;
+    /* text-align: center; */
+    text-align:center ;
+}
+#skills img{
+    /* padding: 5px; */
+    padding-left: 30%;
+    width: 120px;
+}
+/* ED */
+#ed div{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+#ed div div{
+    width: 80%;
+    padding: 1rem;
+    text-align: center;
+}
+#ed img{
+    /* padding: 5px; */
+    padding-left: 20%;
+    height: 240px;
+    width: 240px;
+}
+#ed{
+    /* margin: 0 3rem 3rem 3rem; */
+    margin: 3rem;
+    position: relative;
+    /* font-weight: 550; */
+}
+#ed div:nth-child(2n+1) {
+    position: relative;
+    left:5%;
+}
+#ed div:nth-child(2n) {
+    position: relative;
+    left:55%;
+}
+#br{
+    position: absolute;
+    top: 10%;
+    left: 48%;
+    /* right: 48%; */
+    width: 0px;
+    height: 80%;
+    border-right: 3px dashed black;
+}
+#br img{
+    height: 25px;
+    width: 25px;
+    top: 10%;
+    position: sticky;
+    transform: rotate(90deg);
+    /* border: 1px solid black; */
+    border-radius: 100%;
+    background-color: white;
+    /* position: relative;
+    left: -.7rem;  */
+   
+}
+#traveller{
+    height: 20px;
+    width: 20px;
+}
+/* contact */
+#contact{
+    background-image: linear-gradient(rgb(155, 151, 151), whitesmoke);
+    width: 100%;
+    height: 150px;
+}
+#contact img{
+    /* padding: 5px; */
+    border-radius:40%;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    margin-left: 2rem;
+    word-spacing: 3rem;
+    padding: 5px;
+    transition: .4s ease-in-out;
+}
+#pro{
+    display: flex;
+    margin-top: 1.5rem;
+    justify-content: center;
+}
+#contact img:hover{
+    /* border-radius: 30%;
+    border: 2px solid black; */
+    box-shadow: 0 2px 8px red;
+    transform: scale(1.1);
+    /* transition-duration: .5s; */
+}
+#cp{
+    text-align: center;
+    font-size: 1rem;
+}
+@media only screen and (max-device-width:1200px) 
+{
+    #about{
+        flex-direction: column;
+    }
+    #abt{
+        position: relative;
+        padding-left: 5%;
+        width: 80%;
+        /* left: 25%; */
+    }
+}
+@media only screen and (max-device-width: 834px) 
+/* and (-webkit-min-device-pixel-ratio: 2) */
+{
+    html{
+        font: 55%;
+    }
+    #ed div:nth-child(2n) {
+        position: relative;
+        left:5%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    #br{
+        left: 65%;
+    }
+    #about section{
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (max-device-width: 360px)
+{
+    html{
+        font-size: 23px;
+
+    }
+    #about section{
+        font-size: .8rem;
+    }
+    #profile{
+        margin-top: -6rem;
+    }
+    
+} 
+@media only screen and (max-device-width: 500px)
+{
+    #skills div{
+        width: 40%;
+    }
+}
